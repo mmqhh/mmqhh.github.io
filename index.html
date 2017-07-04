@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>显示当前时间</title>
+    <style>
+    body {
+        background-color: black;
+        color: cyan;
+    }
+    
+    #t {
+        text-align: center;
+        width: 500px;
+        margin: 0 auto;
+        border: 3px solid yellow;
+        font-size: 100px;
+        text-shadow: 2px 2px 2px green;
+    }
+    #footer{
+    	text-align: center;
+    	color: deepskyblue;
+    	font-family: "Times New Roman";
+    	font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="t">Loading</div>
+    <p id="footer">Made By Brohua</p>
+    <script>
+    function printtime() {
+        var t = new Date();
+        h = t.getHours();
+        m = t.getMinutes();
+        s = t.getSeconds();
+        if (h < 10)
+            h = "0" + h;
+        if (m < 10)
+            m = "0" + m;
+        if (s < 10)
+            s = "0" + s;
+        document.getElementById("t").innerHTML = h + ":" + m + ":" + s;
+    }
+    setInterval(printtime, 1000);
+    </script>
+</body>
+
+</html>
