@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body,h1,ul{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    width: 1700px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+a{
+    text-decoration: none;
+    color:#eee;
+    display: block;
+}
+ul{
+    list-style: outside none none;
+}
+h1{
+    float: left;
+    line-height: 70px;
+    color: #50ff5d;
+    font-size: 40px;
+    margin-left: 150px;
+}
+ul{
+    float: right;
+    height: 70px;
+
+}
+ul li{
+    font-size: 20px;
+    width: 200px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    transition-property: all;
+    transition-duration: .5s;
+}
+ul li:hover{
+    background-color: black;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+}
+
+#search{
+    background: url("img/search.jpg") no-repeat center;
+    width: 100%;
+    min-width: 1280px;
+    height: 700px;
+    position: relative;
+
+}
+#center{
+    width: 600px;
+    height: 80px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-40px 0 0 -300px ;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+#input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width:360px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 30px;
+    margin: -38px 0 0 -295px;
+    padding-left: 30px;
+}
+.button{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 75px;
+     width:150px;
+     border-radius: 10px;
+     outline: none;
+     font-size: 30px;
+     margin: -38px 0 0 140px;
+    cursor: pointer;
+    font-weight: bold;
+ }
