@@ -1,95 +1,59 @@
 @charset "UTF-8";
-body,h1,ul{
+html{
+    font-size: 625%;
+}
+body,h1,ul,ol,h2,h3,p{
     margin: 0;
     padding: 0;
+    font-family: 微软雅黑;
+    font-size: .16rem;
 }
-
-.center{
-    width: 1700px;
-    margin: 0 auto;
-    height: 70px;
-}
-
-a{
-    text-decoration: none;
-    color:#eee;
-    display: block;
-}
-ul{
+ul,ol{
     list-style: outside none none;
 }
-h1{
-    float: left;
-    line-height: 70px;
-    color: #50ff5d;
-    font-size: 40px;
-    margin-left: 150px;
-}
-ul{
-    float: right;
-    height: 70px;
-
-}
-ul li{
-    font-size: 20px;
-    width: 200px;
+img{    /*适配移动端的一段代码，图片自适应*/
     display: block;
-    float: left;
-    text-align: center;
-    line-height: 70px;
-    transition-property: all;
-    transition-duration: .5s;
+    max-width: 100%;
 }
-ul li:hover{
-    background-color: black;
+a{
+    text-decoration: none;
+    color: #eee;
+}
+.none{
+    display: none;
 }
 #nav{
     width: 100%;
-    height: 70px;
+    height: 0.45rem;
     background-color: #333;
+    font-size: .16rem;
 }
-
-#search{
-    background: url("img/search.jpg") no-repeat center;
+#nav .link{
+    height: .45rem;
+    line-height: .45rem;
+}
+#nav .link li{
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: .45rem;
+}
+#nav .link li:hover{
+    background-color: black;
+}
+.advert{
+    max-width: 6.4rem;
+    margin: 0 auto;
+}
+#footer{
+    background-color: #222;
     width: 100%;
-    min-width: 1280px;
-    height: 700px;
-    position: relative;
-
+    color: #777;
+    margin: 0 auto;
+    text-align: center;
+    padding:0.1rem 0;
 }
-#center{
-    width: 600px;
-    height: 80px;
-    background: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin:-40px 0 0 -300px ;
-    opacity: 0.6;
-    border-radius: 10px;
+#footer .top{
+    margin-bottom: .05rem;
 }
-#input{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 70px;
-    width:360px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 30px;
-    margin: -38px 0 0 -295px;
-    padding-left: 30px;
-}
-.button{
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     height: 75px;
-     width:150px;
-     border-radius: 10px;
-     outline: none;
-     font-size: 30px;
-     margin: -38px 0 0 140px;
-    cursor: pointer;
-    font-weight: bold;
- }
