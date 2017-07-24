@@ -2,7 +2,7 @@
 html{
     font-size: 625%;
 }
-body,h1,ul,ol,h2,h3,p{
+body,h1,ul,ol,h2,h3,h4,p,figure{
     margin: 0;
     padding: 0;
     font-family: 微软雅黑;
@@ -19,7 +19,7 @@ a{
     text-decoration: none;
     color: #eee;
 }
-div{
+div,figure,figcaption{
     box-sizing: border-box;
 }
 .none{
@@ -49,11 +49,18 @@ div{
     max-width: 6.4rem;
     margin: 0 auto;
 }
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
 #footer{
     background-color: #222;
     width: 100%;
     color: #777;
-    margin: 0 auto;
+    margin: 0.2rem auto;
     text-align: center;
     padding:0.1rem 0;
 }
@@ -132,4 +139,50 @@ div{
     #footer{
         font-size:.13rem;
     }
+}
+
+#tour figure{
+    width:50%;
+    float: left;
+    background-color: #eee;
+    font-size:.16rem;
+    padding:0 0 .05rem 0;
+}
+#tour figure img{
+    padding:.02rem;
+    border-radius: .04rem;
+    vertical-align: middle;
+}
+#tour figcaption{
+    color: #666;
+    padding:.02rem .05rem;
+    font-size:.16rem;
+}
+#tour h4{
+    font-weight:normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#tour p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#tour .info{
+    font-size: .16rem;
+    padding:.1rem 0 0 0;
+}
+#tour .price{
+    color: #f60;
+}
+#tour .price strong{
+    letter-spacing: 0.01rem;
+}
+#tour .sat {
+    color: #999;
+    font-style: normal;
+    float: right;
+    position: relative;
+    right: .05rem;
 }
